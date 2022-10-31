@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 /" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="水上課程介紹、客房介紹、聯絡方式" />
+    <meta name="author" content="Oliver Cheng" />
+    <title>海洋學校 關於我們</title>
+    <base target="_blank" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./海洋元素/taiwanfont/twicon.css" />
+    <link rel="stylesheet" href="../css/aboutus.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <div class="icon">
+        <img src="../海洋元素/diving-svgrepo-com.svg" alt="logo" />
+
+        <h1 class="logoText">海洋學校</h1>
+      </div>
+      <nav>
+        <ol>
+          <li>
+            <a href="./index.html">首頁</a>
+          </li>
+          <li><a href="./room.html">客房介紹</a></li>
+          <li><a href="./diving.html">潛水課程</a></li>
+          <li><a class="active" href="./aboutus.html">關於我們</a></li>
+        </ol>
+      </nav>
+    </header>
+    <main>
+      <h2>關於我們</h2>
+      <hr />
+      <p>
+        我們採潛水學校模式訓練，潛水中心就像學校，教練們就是老師；所以在訓練過程中，有潛水相關問題可詢問教練，而個人財務如繳交學費、租借器材等，則直接向潛水中心洽詢辦理。
+      </p>
+      <h3>聯絡我們</h3>
+      <form action="" method="get">
+        <div class="form12">
+          <label for="putname">名字:</label>
+          <input
+            type="text"
+            id="putname"
+            placeholder="請輸入你的綽號或名字"
+            value=""
+            required
+          />
+        </div>
+
+        <div class="form12">
+          <label for="gender">性別:</label>
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">男</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">女</label>
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">其他</label>
+        </div>
+
+        <div class="form12">
+          <label for="age">年齡區間:</label>
+          <select name="age" id="age" required>
+            <option value=""></option>
+            <option value="15~20">15~20歲</option>
+            <option value="21~25">21~25歲</option>
+            <option value="26~30">26~30歲</option>
+          </select>
+        </div>
+
+        <div class="form12">
+          <label for="email">信箱:</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            value=""
+            placeholder="@"
+            required
+          />
+        </div>
+
+        <div class="form12">
+          <label for="area">從哪邊看到我們:</label><br />
+          <input type="text" list="arealist" id="area" />
+          <datalist id="arealist">
+            <option value="報紙">newspaper</option>
+            <option value="網路">internet</option>
+            <option value="朋友">friend</option>
+          </datalist>
+        </div>
+
+        <div class="form12">
+          <label for="textarea">想給我們的意見:</label>
+          <br />
+          <textarea
+            name="suggestion"
+            id="textarea"
+            cols="30"
+            rows="5"
+            placeholder="不過打了我們也看不到"
+          ></textarea>
+        </div>
+        <button type="submit">提交</button>
+      </form>
+    </main>
+
+    <footer>
+      <div class="icon">
+        <img src="../海洋元素/diving-svgrepo-com.svg" alt="logo" />
+        <h1 class="logoText">海洋學校</h1>
+      </div>
+      <nav>
+        <ol>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li><a href="./aboutus.html">About</a></li>
+          <li><a href="./diving.html">Class</a></li>
+          <li><a href="./room.html">Rooms</a></li>
+        </ol>
+      </nav>
+      <section class="links">
+        <a href="http://www.facebook.com"
+          ><img src="../海洋元素/facebook.svg" alt="Facebook"
+        /></a>
+        <a href="http://www.instagram.com"
+          ><img src="../海洋元素/instagram.svg" alt="Instagram"
+        /></a>
+        <a href="http://www.twitter.com"
+          ><img src="../海洋元素/twitter.svg" alt="Twitter"
+        /></a>
+        <a href="http://www.youtube.com"
+          ><img src="../海洋元素/youtube.svg" alt="Youtube"
+        /></a>
+      </section>
+    </footer>
+  </body>
+</html>

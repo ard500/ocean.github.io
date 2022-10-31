@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+html {
+  background-color: rgb(36, 191, 191, 0.2);
+}
+
+h1,
+h4,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+  background-color: rgb(0, 64, 154);
+
+  div.icon {
+    display: flex;
+    align-items: center;
+    flex: 6 1 300px;
+    margin-left: 2rem;
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    img {
+      width: 5vw;
+      height: 5vw;
+    }
+    .logoText {
+      color: white;
+      margin-left: 0.5rem;
+    }
+  }
+  nav {
+    margin-top: 0.5rem;
+    flex: 3 1 400px;
+    ol {
+      display: flex;
+      list-style-type: none;
+      justify-content: space-around;
+      li {
+        a.active {
+          color: white;
+        }
+        a {
+          padding: 0.5rem;
+          text-decoration: none;
+          font-size: 1rem;
+          color: rgb(187, 186, 186);
+          transition: all 0.5s ease;
+          &:hover {
+            background-color: rgb(36, 191, 191);
+            color: white;
+            border-radius: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  margin: 2rem 0;
+  h2 {
+    color: rgb(49, 14, 163);
+    text-align: center;
+  }
+  section.top {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    section.class {
+      padding: 2rem 1rem;
+      display: flex;
+      div.scale {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 1rem;
+        overflow: hidden;
+
+        img {
+          width: 30vw;
+          height: 30vw;
+          object-fit: cover;
+          transition: all 0.5s ease;
+          border-radius: 1rem;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+      section.right {
+        align-items: center;
+        padding: 0 2rem;
+        h3 {
+          color: rgb(36, 6, 165);
+        }
+        p {
+          width: 50vw;
+          height: 30vw;
+          text-align: 10px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  div.icon {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+
+    img {
+      width: 5vw;
+      height: 5vw;
+    }
+    .logoText {
+      color: rgb(36, 6, 165);
+      margin-left: 0.5rem;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+  nav {
+    width: 40%;
+    ol {
+      display: flex;
+      justify-content: space-around;
+      list-style-type: none;
+      width: 100%;
+      li {
+        a {
+          text-decoration: none;
+          font-size: 1rem;
+          color: rgb(36, 6, 165);
+          transition: all 0.5s ease;
+          padding: 0.25rem 0.5rem;
+          &:hover {
+            background-color: rgb(36, 6, 165);
+            color: white;
+            border-radius: 0.25rem;
+          }
+        }
+      }
+    }
+  }
+
+  section.links {
+    display: flex;
+    margin-top: 1rem;
+    a {
+      display: flex;
+
+      img {
+        width: 2rem;
+        height: 2rem;
+        padding: 0px 0.25rem;
+      }
+    }
+  }
+}
+
+// `xs` returns only a ruleset and no media query
+// ... { ... }
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  main {
+    section.top {
+      section.class {
+        section.right {
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  header {
+    padding-bottom: 1rem;
+    div.icon {
+      justify-content: center;
+      img {
+        width: 12vw;
+        height: 12vw;
+      }
+    }
+  }
+  footer {
+    div.icon {
+      justify-content: center;
+      img {
+        width: 12vw;
+        height: 12vw;
+      }
+    }
+  }
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  main {
+    section.top {
+      align-items: center;
+
+      section.class {
+        display: block;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        div.scale {
+          width: 50vw;
+          height: 50vw;
+          img {
+            width: 50vw;
+            height: 50vw;
+          }
+        }
+        section.right {
+          padding: 1rem 0;
+          h3 {
+            text-align: center;
+          }
+          p {
+            width: 50vw;
+            height: auto;
+          }
+        }
+      }
+    }
+    footer {
+      nav {
+        width: 90%;
+      }
+    }
+  }
+}

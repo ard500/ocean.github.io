@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+html {
+  background-color: rgba(36, 191, 191, 0.2);
+}
+
+h1,
+h4,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+  background-color: rgb(0, 64, 154);
+}
+header div.icon {
+  display: flex;
+  align-items: center;
+  flex: 6 1 300px;
+  margin-left: 2rem;
+}
+header div.icon h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+header div.icon img {
+  width: 5vw;
+  height: 5vw;
+}
+header div.icon .logoText {
+  color: white;
+  margin-left: 0.5rem;
+}
+header nav {
+  margin-top: 0.5rem;
+  flex: 3 1 400px;
+}
+header nav ol {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+header nav ol li a.active {
+  color: white;
+}
+header nav ol li a {
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: rgb(187, 186, 186);
+  transition: all 0.5s ease;
+}
+header nav ol li a:hover {
+  background-color: rgb(36, 191, 191);
+  color: white;
+  border-radius: 1rem;
+}
+
+main {
+  margin: 2rem 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main h2,
+main h3 {
+  color: rgb(49, 14, 163);
+  text-align: center;
+}
+main p {
+  padding: 1rem 1rem;
+  width: 50vw;
+}
+main form {
+  padding: 1rem 5rem;
+}
+main form div.form12 {
+  padding: 5px 0;
+}
+main form div.form12 label {
+  color: rgb(49, 14, 163);
+}
+main form div.form12 input[type=text]:focus {
+  background-color: rgb(133, 248, 248);
+}
+main form div.form12 textarea:focus {
+  background-color: rgb(133, 248, 248);
+  width: 100%;
+}
+main form button {
+  padding: 3px 15px;
+  background-color: rgb(49, 14, 163);
+  border: none;
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+footer div.icon {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+}
+footer div.icon img {
+  width: 5vw;
+  height: 5vw;
+}
+footer div.icon .logoText {
+  color: rgb(36, 6, 165);
+  margin-left: 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+footer nav {
+  width: 40%;
+}
+footer nav ol {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 100%;
+}
+footer nav ol li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: rgb(36, 6, 165);
+  transition: all 0.5s ease;
+  padding: 0.25rem 0.5rem;
+}
+footer nav ol li a:hover {
+  background-color: rgb(36, 6, 165);
+  color: white;
+  border-radius: 0.25rem;
+}
+footer section.links {
+  display: flex;
+  margin-top: 1rem;
+}
+footer section.links a {
+  display: flex;
+}
+footer section.links a img {
+  width: 2rem;
+  height: 2rem;
+  padding: 0px 0.25rem;
+}
+
+@media (max-width: 575.98px) {
+  main p {
+    width: 90vw;
+  }
+}
+@media (max-width: 767.98px) {
+  header {
+    padding-bottom: 1rem;
+  }
+  header div.icon {
+    justify-content: center;
+  }
+  header div.icon img {
+    width: 12vw;
+    height: 12vw;
+  }
+  footer div.icon {
+    justify-content: center;
+  }
+  footer div.icon img {
+    width: 12vw;
+    height: 12vw;
+  }
+}
+@media (max-width: 991.98px) {
+  main p {
+    width: 80vw;
+  }
+  footer nav {
+    width: 90%;
+  }
+}/*# sourceMappingURL=aboutus.css.map */

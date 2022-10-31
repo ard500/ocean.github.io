@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+html {
+  background-color: rgba(36, 191, 191, 0.2);
+}
+
+h1,
+h4,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+  background-color: rgb(0, 64, 154);
+}
+header div.icon {
+  display: flex;
+  align-items: center;
+  flex: 6 1 300px;
+  margin-left: 2rem;
+}
+header div.icon h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+header div.icon img {
+  width: 5vw;
+  height: 5vw;
+}
+header div.icon .logoText {
+  color: white;
+  margin-left: 0.5rem;
+}
+header nav {
+  margin-top: 0.5rem;
+  flex: 3 1 400px;
+}
+header nav ol {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+header nav ol li a.active {
+  color: white;
+}
+header nav ol li a {
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: rgb(187, 186, 186);
+  transition: all 0.5s ease;
+}
+header nav ol li a:hover {
+  background-color: rgb(36, 191, 191);
+  color: white;
+  border-radius: 1rem;
+}
+
+main {
+  margin: 2rem 0;
+}
+main h2 {
+  color: rgb(49, 14, 163);
+  text-align: center;
+}
+main section.top {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+}
+main section.top section.class {
+  padding: 2rem 1rem;
+  display: flex;
+}
+main section.top section.class div.scale {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+main section.top section.class div.scale img {
+  width: 30vw;
+  height: 30vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s ease;
+  border-radius: 1rem;
+}
+main section.top section.class div.scale img:hover {
+  transform: scale(1.2);
+}
+main section.top section.class section.right {
+  align-items: center;
+  padding: 0 2rem;
+}
+main section.top section.class section.right h3 {
+  color: rgb(36, 6, 165);
+}
+main section.top section.class section.right p {
+  width: 50vw;
+  height: 30vw;
+  text-align: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+footer div.icon {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+}
+footer div.icon img {
+  width: 5vw;
+  height: 5vw;
+}
+footer div.icon .logoText {
+  color: rgb(36, 6, 165);
+  margin-left: 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+footer nav {
+  width: 40%;
+}
+footer nav ol {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 100%;
+}
+footer nav ol li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: rgb(36, 6, 165);
+  transition: all 0.5s ease;
+  padding: 0.25rem 0.5rem;
+}
+footer nav ol li a:hover {
+  background-color: rgb(36, 6, 165);
+  color: white;
+  border-radius: 0.25rem;
+}
+footer section.links {
+  display: flex;
+  margin-top: 1rem;
+}
+footer section.links a {
+  display: flex;
+}
+footer section.links a img {
+  width: 2rem;
+  height: 2rem;
+  padding: 0px 0.25rem;
+}
+
+@media (max-width: 575.98px) {
+  main section.top section.class section.right p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 767.98px) {
+  header {
+    padding-bottom: 1rem;
+  }
+  header div.icon {
+    justify-content: center;
+  }
+  header div.icon img {
+    width: 12vw;
+    height: 12vw;
+  }
+  footer div.icon {
+    justify-content: center;
+  }
+  footer div.icon img {
+    width: 12vw;
+    height: 12vw;
+  }
+}
+@media (max-width: 991.98px) {
+  main section.top {
+    align-items: center;
+  }
+  main section.top section.class {
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  main section.top section.class div.scale {
+    width: 50vw;
+    height: 50vw;
+  }
+  main section.top section.class div.scale img {
+    width: 50vw;
+    height: 50vw;
+  }
+  main section.top section.class section.right {
+    padding: 1rem 0;
+  }
+  main section.top section.class section.right h3 {
+    text-align: center;
+  }
+  main section.top section.class section.right p {
+    width: 50vw;
+    height: auto;
+  }
+  main footer nav {
+    width: 90%;
+  }
+}/*# sourceMappingURL=diving.css.map */
